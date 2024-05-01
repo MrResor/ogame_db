@@ -12,6 +12,7 @@ First, [network.sh](network.sh) should be run to prepaire a network that will la
 
 ### Secrets
 Next step requires creation of folder secrets. It is not present in the repository, because as name sugests it will hold secrets, such as password to the database. Inside the folder create file named DB_PASS.txt. Inside that file write your password for database root. This password should be remembered because it will be used later to log into both mysql, and myphpamin as root. Example:
+
 ```
 mkdir secrets
 echo YOUR_SUPER_SECRET_PASSWORD > ./secrets/DB_PASS.txt
@@ -36,6 +37,7 @@ CREATE DATABASE `ogame`;
 
 USE `ogame`;
 ```
+
 In addition to that, the script can be called more than once with data from other file (when for example schema is in one file, and the querries with data to fill the tables is in other).
 
 ### MyPHPAdmin (optional)
