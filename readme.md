@@ -19,6 +19,7 @@ echo YOUR_SUPER_SECRET_PASSWORD > ./secrets/DB_PASS.txt
 
 ### Database
 Following that is the database setup. Simply running the [database.sh](database.sh) script will setup the container with the database, as well will create a volume that will allow for the data to remain even if the container is stopped or removed.
+NOTE: the database will be running on port 3307 instead of standard 3306
 
 ### Schema
 With the databse setup, it's schema should be imported. Current schema can be found in [init.sql](init.sql). The schema can be loaded into the database using [init.sh](init.sh) script
